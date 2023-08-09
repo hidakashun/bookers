@@ -4,13 +4,13 @@ class BooksController < ApplicationController
     @book = Book.new
   end
 
- def create
+  def create
     # １.&2. データを受け取り新規登録するためのインスタンス作成
     @book = Book.new(book_params)
     # 3. データをデータベースに保存するためのsaveメソッド実行
     @book.save
     # 4. show画面へリダイレクト
-    redirect_to "sh"#showのコントローラーとルーティングを作ることでエラー解消する？
+    redirect_to "/show"#showのコントローラーとルーティングを作ることでエラー解消する？
   end
 
   def index
@@ -18,6 +18,7 @@ class BooksController < ApplicationController
   end
 
   def show
+    @book = Book.find(params[:id])
   end
 
   def edit
