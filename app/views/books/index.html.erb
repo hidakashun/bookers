@@ -1,2 +1,166 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<p id="notice"></p>
+<h1>Books</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a class="show_167183" href="/books/167183">Show</a>
+      </td>
+      <td>
+        <a class="edit_167183" href="/books/167183/edit">Edit</a>
+      </td>
+      <td>
+        <a data-confirm="Are you sure?" class="destroy_167183" rel="nofollow" data-method="delete" href="/books/167183">Destroy</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a class="show_167184" href="/books/167184">Show</a>
+      </td>
+      <td>
+        <a class="edit_167184" href="/books/167184/edit">Edit</a>
+      </td>
+      <td>
+        <a data-confirm="Are you sure?" class="destroy_167184" rel="nofollow" data-method="delete" href="/books/167184">Destroy</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a class="show_167185" href="/books/167185">Show</a>
+      </td>
+      <td>
+        <a class="edit_167185" href="/books/167185/edit">Edit</a>
+      </td>
+      <td>
+        <a data-confirm="Are you sure?" class="destroy_167185" rel="nofollow" data-method="delete" href="/books/167185">Destroy</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a class="show_167186" href="/books/167186">Show</a>
+      </td>
+      <td>
+        <a class="edit_167186" href="/books/167186/edit">Edit</a>
+      </td>
+      <td>
+        <a data-confirm="Are you sure?" class="destroy_167186" rel="nofollow" data-method="delete" href="/books/167186">Destroy</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a class="show_167187" href="/books/167187">Show</a>
+      </td>
+      <td>
+        <a class="edit_167187" href="/books/167187/edit">Edit</a>
+      </td>
+      <td>
+        <a data-confirm="Are you sure?" class="destroy_167187" rel="nofollow" data-method="delete" href="/books/167187">Destroy</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a class="show_167188" href="/books/167188">Show</a>
+      </td>
+      <td>
+        <a class="edit_167188" href="/books/167188/edit">Edit</a>
+      </td>
+      <td>
+        <a data-confirm="Are you sure?" class="destroy_167188" rel="nofollow" data-method="delete" href="/books/167188">Destroy</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a class="show_167189" href="/books/167189">Show</a>
+      </td>
+      <td>
+        <a class="edit_167189" href="/books/167189/edit">Edit</a>
+      </td>
+      <td>
+        <a data-confirm="Are you sure?" class="destroy_167189" rel="nofollow" data-method="delete" href="/books/167189">Destroy</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a class="show_167190" href="/books/167190">Show</a>
+      </td>
+      <td>
+        <a class="edit_167190" href="/books/167190/edit">Edit</a>
+      </td>
+      <td>
+        <a data-confirm="Are you sure?" class="destroy_167190" rel="nofollow" data-method="delete" href="/books/167190">Destroy</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a class="show_167191" href="/books/167191">Show</a>
+      </td>
+      <td>
+        <a class="edit_167191" href="/books/167191/edit">Edit</a>
+      </td>
+      <td>
+        <a data-confirm="Are you sure?" class="destroy_167191" rel="nofollow" data-method="delete" href="/books/167191">Destroy</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a class="show_167192" href="/books/167192">Show</a>
+      </td>
+      <td>
+        <a class="edit_167192" href="/books/167192/edit">Edit</a>
+      </td>
+      <td>
+        <a data-confirm="Are you sure?" class="destroy_167192" rel="nofollow" data-method="delete" href="/books/167192">Destroy</a>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h2>New book</h2>
+<!-- form_with部分 -->
+<%= form_with model: @book do |f| %>
+  <h4>Title</h4>
+  <%= f.text_field :title %>
+
+  <h4>Body</h4>
+  <%= f.text_area :body %>
+
+  <%= f.submit 'Create Book' %>
+<% end %>

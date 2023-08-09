@@ -10,7 +10,7 @@ class BooksController < ApplicationController
     # 3. データをデータベースに保存するためのsaveメソッド実行
     @book.save
     # 4. show画面へリダイレクト
-    redirect_to "/show"#showのコントローラーとルーティングを作ることでエラー解消
+    redirect_to "sh"#showのコントローラーとルーティングを作ることでエラー解消する？
   end
 
   def index
