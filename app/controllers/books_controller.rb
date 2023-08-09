@@ -6,14 +6,15 @@ class BooksController < ApplicationController
 
  def create
     # １.&2. データを受け取り新規登録するためのインスタンス作成
-    book = Book.new(list_params)
+    @book = Book.new(book_params)
     # 3. データをデータベースに保存するためのsaveメソッド実行
-    book.save
-    # 4. トップ画面へリダイレクト
-    redirect_to "/"
+    @book.save
+    # 4. show画面へリダイレクト
+    redirect_to "/show"#showのコントローラーとルーティングを作ることでエラー解消
   end
 
   def index
+    @book = Book.new
   end
 
   def show
