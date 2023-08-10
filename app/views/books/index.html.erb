@@ -11,145 +11,21 @@
   </thead>
 
   <tbody>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>
-        <a class="show_167183" href="/books/167183">Show</a>
-      </td>
-      <td>
-        <a class="edit_167183" href="/books/167183/edit">Edit</a>
-      </td>
-      <td>
-        <a data-confirm="Are you sure?" class="destroy_167183" rel="nofollow" data-method="delete" href="/books/167183">Destroy</a>
-      </td>
-    </tr>
+
+  <% @books.each do |book| %>
 
     <tr>
-      <td></td>
-      <td></td>
       <td>
-        <a class="show_167184" href="/books/167184">Show</a>
+        <span><%= book.title %></span>
       </td>
       <td>
-        <a class="edit_167184" href="/books/167184/edit">Edit</a>
+        <span><%= book.body %></span>
       </td>
-      <td>
-        <a data-confirm="Are you sure?" class="destroy_167184" rel="nofollow" data-method="delete" href="/books/167184">Destroy</a>
-      </td>
+      <td><%= link_to "Show", "/books/#{book.id}" %></td>
+      <td><%= link_to "Edit", "/books/#{book.id}" %></td>
+      <td><%= link_to "Destroy", "/books/#{book.id}" %></td>
     </tr>
-
-    <tr>
-      <td></td>
-      <td></td>
-      <td>
-        <a class="show_167185" href="/books/167185">Show</a>
-      </td>
-      <td>
-        <a class="edit_167185" href="/books/167185/edit">Edit</a>
-      </td>
-      <td>
-        <a data-confirm="Are you sure?" class="destroy_167185" rel="nofollow" data-method="delete" href="/books/167185">Destroy</a>
-      </td>
-    </tr>
-
-    <tr>
-      <td></td>
-      <td></td>
-      <td>
-        <a class="show_167186" href="/books/167186">Show</a>
-      </td>
-      <td>
-        <a class="edit_167186" href="/books/167186/edit">Edit</a>
-      </td>
-      <td>
-        <a data-confirm="Are you sure?" class="destroy_167186" rel="nofollow" data-method="delete" href="/books/167186">Destroy</a>
-      </td>
-    </tr>
-
-    <tr>
-      <td></td>
-      <td></td>
-      <td>
-        <a class="show_167187" href="/books/167187">Show</a>
-      </td>
-      <td>
-        <a class="edit_167187" href="/books/167187/edit">Edit</a>
-      </td>
-      <td>
-        <a data-confirm="Are you sure?" class="destroy_167187" rel="nofollow" data-method="delete" href="/books/167187">Destroy</a>
-      </td>
-    </tr>
-
-    <tr>
-      <td></td>
-      <td></td>
-      <td>
-        <a class="show_167188" href="/books/167188">Show</a>
-      </td>
-      <td>
-        <a class="edit_167188" href="/books/167188/edit">Edit</a>
-      </td>
-      <td>
-        <a data-confirm="Are you sure?" class="destroy_167188" rel="nofollow" data-method="delete" href="/books/167188">Destroy</a>
-      </td>
-    </tr>
-
-    <tr>
-      <td></td>
-      <td></td>
-      <td>
-        <a class="show_167189" href="/books/167189">Show</a>
-      </td>
-      <td>
-        <a class="edit_167189" href="/books/167189/edit">Edit</a>
-      </td>
-      <td>
-        <a data-confirm="Are you sure?" class="destroy_167189" rel="nofollow" data-method="delete" href="/books/167189">Destroy</a>
-      </td>
-    </tr>
-
-    <tr>
-      <td></td>
-      <td></td>
-      <td>
-        <a class="show_167190" href="/books/167190">Show</a>
-      </td>
-      <td>
-        <a class="edit_167190" href="/books/167190/edit">Edit</a>
-      </td>
-      <td>
-        <a data-confirm="Are you sure?" class="destroy_167190" rel="nofollow" data-method="delete" href="/books/167190">Destroy</a>
-      </td>
-    </tr>
-
-    <tr>
-      <td></td>
-      <td></td>
-      <td>
-        <a class="show_167191" href="/books/167191">Show</a>
-      </td>
-      <td>
-        <a class="edit_167191" href="/books/167191/edit">Edit</a>
-      </td>
-      <td>
-        <a data-confirm="Are you sure?" class="destroy_167191" rel="nofollow" data-method="delete" href="/books/167191">Destroy</a>
-      </td>
-    </tr>
-
-    <tr>
-      <td></td>
-      <td></td>
-      <td>
-        <a class="show_167192" href="/books/167192">Show</a>
-      </td>
-      <td>
-        <a class="edit_167192" href="/books/167192/edit">Edit</a>
-      </td>
-      <td>
-        <a data-confirm="Are you sure?" class="destroy_167192" rel="nofollow" data-method="delete" href="/books/167192">Destroy</a>
-      </td>
-    </tr>
+ <% end %>
 
   </tbody>
 </table>

@@ -9,12 +9,13 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
     # 3. データをデータベースに保存するためのsaveメソッド実行
     @book.save
-    # 4. show画面へリダイレクト
-    redirect_to "/show"#showのコントローラーとルーティングを作ることでエラー解消する？
+    # 4. show画面任意のページにへリダイレクト
+    redirect_to book_path(@book.id)
   end
 
   def index
     @book = Book.new
+    @books = Book.all
   end
 
   def show
